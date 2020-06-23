@@ -1,0 +1,2 @@
+rootProject.name='DrawableEmple'
+include ':app'
