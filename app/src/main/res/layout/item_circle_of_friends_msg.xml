@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?><!--    朋友圈-新消息列表 item -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+    <!--       头像-->
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="12.5dp"
+        android:src="@drawable/chat_head_friend" />
+
+    <!--        昵称&内容-->
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginRight="15.5dp"
+        android:layout_toLeftOf="@+id/rl_multi_media"
+        android:layout_toRightOf="@id/iv_header"
+        android:orientation="vertical">
+        <!--昵称-->
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送你一朵fafa"
+            android:textColor="#ff007ee5"
+            android:textSize="12.5sp"
+            android:layout_marginTop="16dp"
+            android:singleLine="true" />
+
+        <!--点赞-->
+        <ImageView
+            android:id="@+id/iv_only_like_tag"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="8.5dp"
+            android:visibility="visible"
+            android:src="@drawable/ic_like_tag" />
+        <!--评论-->
+        <com.yrn.drawableemple.view.CommentTextView
+            android:id="@+id/tv_comment_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:textColor="@color/reply_context_color"
+            android:textSize="12.5sp"
+            android:visibility="visible"
+            android:padding="2dp"/>
+        <!--        提醒我查看-->
+        <TextView
+            android:id="@+id/tv_moments_msg_remind_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/str_moments_msg_remind_me"
+            android:textColor="#ff222222"
+            android:textSize="12.5sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 时间-->
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_alignLeft="@id/linear1"
+        android:layout_marginTop="4dp"
+        android:text="30分钟前"
+        android:textColor="#ff7f7f7f"
+        android:textSize="10.5sp" />
+    <!--删除 （自己的朋友圈才有此权限）-->
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginLeft="9.5dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/time_text"
+        android:text="@string/str_delete"
+        android:textColor="#ff496cb8"
+        android:textSize="10.5sp"
+        android:visibility="gone"/>
+
+    <!--        分割线-->
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.34dp"
+        android:layout_below="@+id/time_text"
+        android:layout_alignLeft="@id/linear1"
+        android:layout_marginTop="7.35dp"
+        android:background="@color/moments_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_multi_media"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="11dp">
+
+        <ImageView
+            android:id="@+id/iv_multi_media"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/timg02" />
+
+        <ImageView
+            android:id="@+id/iv_multi_media_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_multi_media_type_video" />
+    </RelativeLayout>
+
+    <!--  文本消息内容-->
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="11dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lineSpacingExtra="1.5dp"
+        android:maxLines="3"
+        android:text="456789"
+        android:textColor="#ff7f7f7f"
+        android:textSize="12sp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp" />
+
+</RelativeLayout>

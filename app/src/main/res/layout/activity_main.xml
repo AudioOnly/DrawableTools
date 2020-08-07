@@ -28,62 +28,89 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/selector_for_line_vertical" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="竖线（无法使用View实现）"
-                android:layout_marginLeft="15dp"/>
+                android:layout_marginLeft="15dp"
+                android:text="竖线（无法使用View实现）" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/shape_for_line_horizontal" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="横线（无法使用View实现）"
-                android:layout_marginLeft="15dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="使用圆角8dp，描边边框"
-                android:layout_marginLeft="15dp"
-                android:padding="16dp"
-                android:background="@drawable/shape_base"
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="使用 selector+item+space点击背景状态+（selector-color）实现文字点击效果 (隐形调用点击事件)"
-                android:layout_marginLeft="15dp"
-                android:padding="16dp"
-                android:onClick="tvOnClicker"
-                android:background="@drawable/selector_item_shape"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/selector_color"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="横线（无法使用View实现）" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_base"
+                android:padding="16dp"
+                android:text="使用圆角8dp，描边边框" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_item_shape"
+                android:onClick="tvOnClicker"
+                android:padding="16dp"
+                android:text="使用 selector+item+space点击背景状态+（selector-color）实现文字点击效果 (隐形调用点击事件)"
+                android:textColor="@color/selector_color" />
 
 
             <TextView
                 android:id="@+id/tv_code_selector"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="java实现背景点击效果"
                 android:layout_marginLeft="15dp"
-                android:padding="16dp"
+                android:layout_marginTop="10dp"
                 android:onClick="tvOnClicker"
-                android:layout_marginTop="10dp"/>
+                android:padding="16dp"
+                android:text="java实现背景点击效果" />
 
             <TextView
                 android:id="@+id/tv_code_gradient"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="java实现背景渐变效果"
                 android:layout_marginLeft="15dp"
-                android:padding="16dp"
+                android:layout_marginTop="10dp"
                 android:onClick="tvOnClicker"
-                android:layout_marginTop="10dp"/>
+                android:padding="16dp"
+                android:text="java实现背景渐变效果" />
+
+
+            <TextView
+                android:id="@+id/tv_get_screen_dispaly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+                android:onClick="tvGetScreenDisplay"
+                android:padding="16dp"
+                android:text="获取屏幕尺寸" />
+
+            <TextView
+                android:id="@+id/tv_2_auto_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+                android:onClick="tv2AutoSize"
+                android:padding="16dp"
+                android:text="跳转AutoSize" />
 
         </LinearLayout>
     </ScrollView>

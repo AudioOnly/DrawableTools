@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">xml实现Drawable和Color</string>
+
+
+    <string name="str_moments_msg_remind_me">同时提到了你</string>
+    <string name="str_delete">删除</string>
+
+
+    <string name="moment_time_before_min">%d分钟前</string>
+    <string name="moment_time_before_hour">%d小时前</string>
+    <string name="moment_time_before_day">%d天前</string>
+    <string name="moment_time_yesterday">昨天</string>
+    <string name="moment_comment_deleted">该评论已删除</string>
+    <string name="moment_comment_reply">回复</string>
+
+    <string name="str_message">消息</string>
+    <string name="moment_message_clear">清空</string>
 </resources>
