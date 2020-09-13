@@ -12,13 +12,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.yrn.drawableemple.R;
 import com.yrn.drawableemple.bean.CommentModel;
 import com.yrn.drawableemple.bean.MomentMsgBean;
-import com.yrn.drawableemple.bean.MomentsDetailBean;
 import com.yrn.drawableemple.util.TimeUtils;
 import com.yrn.drawableemple.view.CommentTextView;
 

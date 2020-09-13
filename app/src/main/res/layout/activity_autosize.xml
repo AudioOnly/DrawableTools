@@ -12,12 +12,12 @@
 
         <ImageView
             android:id="@+id/back_view"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:fitsSystemWindows="true"
-            android:paddingLeft="17.5dp"
+            android:layout_marginLeft="17.5dp"
             android:src="@drawable/back_white" />
 
         <TextView

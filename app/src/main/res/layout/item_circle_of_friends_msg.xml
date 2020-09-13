@@ -9,6 +9,7 @@
         android:id="@+id/iv_header"
         android:layout_width="36dp"
         android:layout_height="36dp"
+        android:layout_marginStart="11dp"
         android:layout_marginLeft="11dp"
         android:layout_marginTop="12.5dp"
         android:src="@drawable/chat_head_friend" />
@@ -18,9 +19,13 @@
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="7.5dp"
         android:layout_marginLeft="7.5dp"
+        android:layout_marginEnd="15.5dp"
         android:layout_marginRight="15.5dp"
+        android:layout_toStartOf="@+id/rl_multi_media"
         android:layout_toLeftOf="@+id/rl_multi_media"
+        android:layout_toEndOf="@id/iv_header"
         android:layout_toRightOf="@id/iv_header"
         android:orientation="vertical">
         <!--昵称-->
@@ -28,11 +33,11 @@
             android:id="@+id/friend_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="送你一朵fafa"
+            android:layout_marginTop="13dp"
+            android:singleLine="true"
+            android:text="送你一朵花花"
             android:textColor="#ff007ee5"
-            android:textSize="12.5sp"
-            android:layout_marginTop="16dp"
-            android:singleLine="true" />
+            android:textSize="12.5sp" />
 
         <!--点赞-->
         <ImageView
@@ -40,25 +45,25 @@
             android:layout_width="12dp"
             android:layout_height="12dp"
             android:layout_marginTop="8.5dp"
-            android:visibility="visible"
-            android:src="@drawable/ic_like_tag" />
+            android:src="@drawable/ic_like_tag"
+            android:visibility="gone" />
         <!--评论-->
         <com.yrn.drawableemple.view.CommentTextView
             android:id="@+id/tv_comment_reply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:layout_marginTop="4dp"
+            android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
             android:textColor="@color/reply_context_color"
             android:textSize="12.5sp"
-            android:visibility="visible"
-            android:padding="2dp"/>
-        <!--        提醒我查看-->
+            android:visibility="visible" />
+        <!-- 提醒我查看-->
         <TextView
             android:id="@+id/tv_moments_msg_remind_me"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="3dp"
+            android:padding="2dp"
             android:text="@string/str_moments_msg_remind_me"
             android:textColor="#ff222222"
             android:textSize="12.5sp"
@@ -71,8 +76,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/linear1"
+        android:layout_alignStart="@id/linear1"
         android:layout_alignLeft="@id/linear1"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="1dp"
         android:text="30分钟前"
         android:textColor="#ff7f7f7f"
         android:textSize="10.5sp" />
@@ -82,13 +88,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/linear1"
+        android:layout_marginStart="9.5dp"
         android:layout_marginLeft="9.5dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/time_text"
         android:layout_toRightOf="@id/time_text"
         android:text="@string/str_delete"
         android:textColor="#ff496cb8"
         android:textSize="10.5sp"
-        android:visibility="gone"/>
+        android:visibility="visible" />
 
     <!--        分割线-->
     <View
@@ -97,15 +105,17 @@
         android:layout_height="0.34dp"
         android:layout_below="@+id/time_text"
         android:layout_alignLeft="@id/linear1"
-        android:layout_marginTop="7.35dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="8.5dp"
         android:background="@color/moments_line_color" />
 
+    <!--多媒体/标记-->
     <RelativeLayout
         android:id="@+id/rl_multi_media"
         android:layout_width="54dp"
         android:layout_height="54dp"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="11dp">
 
         <ImageView
@@ -133,9 +143,10 @@
         android:layout_width="54dp"
         android:layout_height="54dp"
         android:layout_alignParentEnd="true"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
         android:ellipsize="end"
         android:gravity="center"
         android:lineSpacingExtra="1.5dp"
@@ -143,8 +154,6 @@
         android:text="456789"
         android:textColor="#ff7f7f7f"
         android:textSize="12sp"
-        android:visibility="visible"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="11dp" />
+        android:visibility="visible" />
 
 </RelativeLayout>
