@@ -11,7 +11,7 @@
         android:name=".app.MyApp"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".animation.AnimRotateActivity"
+            android:name=".animation.ObjectAnimatorActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".autosize.AutoSizeActivity" />
-
-
+        <activity android:name=".animation.AnimRotateActivity" />
 
 
         <!-- 如果您项目中的所有页面都只需要以高或宽中的一个作为基准进行适配的话, 那就只需要填写高或宽中的一个设计图尺寸即可 -->
